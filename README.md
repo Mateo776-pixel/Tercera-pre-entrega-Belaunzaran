@@ -36,10 +36,10 @@ Descripción: Esta página permite registrar un nuevo expreso. Para ello, debes 
 URL: /vendedores/ (o haciendo clic en "Vendedores" en la barra de navegación)
 Descripción: En esta página, puedes registrar un vendedor. Los datos requeridos son el nombre, apellido y código del vendedor. Al igual que en otras secciones, todos los campos son obligatorios y se debe presionar el botón "Enviar" para completar el registro.
 4. Registro de Clientes
-URL: /cli/ (o haciendo clic en "Clientes" en la barra de navegación)
+URL: /clientes/ (o haciendo clic en "Clientes" en la barra de navegación)
 Descripción: Esta página permite registrar nuevos clientes ingresando su nombre, email, teléfono y dirección. Al igual que en los registros anteriores, todos los campos son obligatorios y debes presionar el botón "Enviar" para completar el registro. Este registro es importante, ya que se utilizará para realizar las búsquedas de clientes desde la página de inicio.
 5. Registro de Proveedores
-URL: /prov/ (o haciendo clic en "Proveedores" en la barra de navegación)
+URL: /proveedores/ (o haciendo clic en "Proveedores" en la barra de navegación)
 Descripción: En esta página, puedes registrar un proveedor ingresando su nombre, email, teléfono y dirección. Todos los campos son obligatorios y el registro se completa al presionar el botón "Enviar".
 Acceso al panel de administración de Django
 Para gestionar la base de datos a través de la interfaz de administración de Django, inicia sesión en el siguiente enlace:
