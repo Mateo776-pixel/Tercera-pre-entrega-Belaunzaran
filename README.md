@@ -1,49 +1,49 @@
-# Tercera preentrega Proyecto Django - Web intemedia
+Tercera Preentrega Proyecto Django
+Este proyecto de Django tiene como objetivo la gestión de expresos, vendedores, clientes y proveedores. Además, permite realizar búsquedas de clientes por nombre desde la página principal.
 
-El proyecto de web intermedia incluye las funcionalidades para registrar expresos, vendedores, clientes y proveedores asi como realizar la busqueda de un cliente por el nombre del cliente en la pantalla principal.
+Pasos para ejecutar el proyecto
+Clona el repositorio en tu máquina local:
 
-# Pasos para ejecutar:
-1. Clona el repositorio en la terminal de tu maquina local: 
-git clone 
+bash
+Copiar código
+git clone <URL-del-repositorio>
+Instala las dependencias del proyecto:
 
-2. Instala las dependencias del proyecto: 
-pip install –r requirements.txt 
+bash
+Copiar código
+pip install -r requirements.txt
+Activa el entorno virtual:
 
-3. Activa el entorno virtual: 
+bash
+Copiar código
 source venv1/Scripts/activate
+Inicia el servidor de desarrollo:
 
-4. Inicia el servidor:
+bash
+Copiar código
 python manage.py runserver
+Accede al proyecto desde tu navegador:
 
-5. Accede desde el navegador al inicio del proyecto:
-http://localhost:8000/inicio/
+Abre la URL: http://localhost:8000/inicio/
+Funcionalidades
+1. Página de inicio / Búsqueda de clientes por nombre
+URL: /inicio/ (o haciendo clic en "Inicio" en la barra de navegación)
+Descripción: En la página de inicio, los usuarios pueden buscar clientes por su nombre. Si no se encuentran resultados, se muestra un mensaje indicando que no se han encontrado clientes. Para poder realizar una búsqueda, primero debes registrar un cliente. Por ejemplo, si registras un cliente con el nombre "Mateo", podrás buscarlo en la página de inicio y ver sus detalles (nombre, email, teléfono y dirección).
+2. Registro de Expresos
+URL: /expresos/ (o haciendo clic en "Expresos" en la barra de navegación)
+Descripción: Esta página permite registrar un nuevo expreso. Para ello, debes ingresar un nombre, un código y la dirección de entrega. Todos los campos son obligatorios y debes presionar el botón "Enviar" para completar el registro.
+3. Registro de Vendedores
+URL: /vendedores/ (o haciendo clic en "Vendedores" en la barra de navegación)
+Descripción: En esta página, puedes registrar un vendedor. Los datos requeridos son el nombre, apellido y código del vendedor. Al igual que en otras secciones, todos los campos son obligatorios y se debe presionar el botón "Enviar" para completar el registro.
+4. Registro de Clientes
+URL: /cli/ (o haciendo clic en "Clientes" en la barra de navegación)
+Descripción: Esta página permite registrar nuevos clientes ingresando su nombre, email, teléfono y dirección. Al igual que en los registros anteriores, todos los campos son obligatorios y debes presionar el botón "Enviar" para completar el registro. Este registro es importante, ya que se utilizará para realizar las búsquedas de clientes desde la página de inicio.
+5. Registro de Proveedores
+URL: /prov/ (o haciendo clic en "Proveedores" en la barra de navegación)
+Descripción: En esta página, puedes registrar un proveedor ingresando su nombre, email, teléfono y dirección. Todos los campos son obligatorios y el registro se completa al presionar el botón "Enviar".
+Acceso al panel de administración de Django
+Para gestionar la base de datos a través de la interfaz de administración de Django, inicia sesión en el siguiente enlace:
 
-# Funcionalidades:
-
-1. Pagina de inicio / Buscar clientes por nombre del cliente:
-- URL /inicio/ O haciendo click en "inicio" en la barra de navegacion
-- Descripcion: Es la pagina principal del proyecto donde se visualiza un titulo y debajo se puede buscar clientes por nombre del cliente (hay un pequeño mensaje abajo del buscador informando que no hay ningun cliente para buscar) Primero debemos ir a clientes y guardar algun cliente. Luego al ir a inicio podremos buscarlo, por ejemplo si cargamos el un cliente con nombre 'Mateo' al ponerlo en la busqueda, debajo nos aparecera toda la info respecto de ese cliente, en este caso: Nombre - Email - Telefono - Direccion 
-
-2. Registro de Expresos:
-- URL /expresos/ O haciendo click en "Expresos" en la barra de navegacion
-- Descripcion: En esta pagina se puede realizar el registro de expresos, ingresando un nombre, codigo y direccion de entrega. Es obligatorio completar todos los campos y presionar el boton "Enviar" para realizar el registro del expreso.
-
-3. Registro de Vendedores:
-- URL /vendedores/ O haciendo click en "Vendedores" en la barra de navegacion
-- Descripcion: En esta pagina se puede realizar el registro de un vendedor, ingresando nombre, apellido y codigo Es obligatorio completar todos los campos y presionar el boton "Enviar" para realizar el registro del vendedor.
-
-4. Registro de clientes:
-- URL /cli/ O haciendo click en "Clientes" en la barra de navegacion
-- Descripcion: En esta pagina se puede realizar el registro de clientes, ingresando el nombre, email, telefono y direccion. Es obligatorio completar todos los campos y presionar el boton "Enviar" para realizar el registro del cleinte. Este registro se podra usar para la busqueda de clientes en la pantalla Inicio.
-
-5. Registro de proveedores:
-- URL /prov/ O haciendo click en "Proveedores" en la barra de navegacion
-- Descripcion: En esta pagina se puede realizar el registro de proveedores, ingresando el nombre, email, telefono y direccion. Es obligatorio completar todos los campos y presionar el boton "Enviar" para realizar el registro del proveedor.
-
-# Acceso al panel de administracion:
-Inicia sesion con tu usuario para acceder al panel de administracion de Django y ver la base de datos:
-Accede desde el navegador al login de administracion: http://localhost:8000/admin/
-- Nombre de usuario: CoderUsu
-- Contraseña: Coder123
-
-
+URL del panel de administración: http://localhost:8000/admin/
+Nombre de usuario: CoderUsu
+Contraseña: Coder123
